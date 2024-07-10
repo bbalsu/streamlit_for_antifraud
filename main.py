@@ -45,7 +45,7 @@ def predict(emb):
     return pred
 
 def load_image():
-    uploaded_file = st.file_uploader(label='Выберите изображение для распознавания (формат jpg/jpeg/png)')
+    uploaded_file = st.file_uploader(label='Выберите изображение для распознавания (формат jpg/jpeg)')
     if uploaded_file is not None:
         image_data = uploaded_file.getvalue()
         st.image(image_data)
